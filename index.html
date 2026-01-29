@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="Will Delgado">
-    <meta name="theme-color" content="#1e40af">
+    <meta name="theme-color" content="#1d499c">
     <meta name="color-scheme" content="light">
     <meta name="geo.region" content="US-FL">
     <meta name="geo.placename" content="Miami">
@@ -23,7 +23,7 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Will Delgado | Florida Mortgage Consultant">
     <meta property="og:description" content="Expert mortgage consulting for home buyers and refinancing. Get competitive rates and personalized service.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/1e40af/ffffff?text=Will+Delgado+Florida+Mortgage">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/1d499c/ffffff?text=Will+Delgado+Florida+Mortgage">
     <meta property="og:image:alt" content="Will Delgado Florida Mortgage Consultant">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -36,7 +36,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Will Delgado | Florida Mortgage Consultant">
     <meta name="twitter:description" content="Expert mortgage consulting for home buyers and refinancing.">
-    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/1e40af/ffffff?text=Will+Delgado+Florida+Mortgage">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/1d499c/ffffff?text=Will+Delgado+Florida+Mortgage">
     <meta name="twitter:image:alt" content="Will Delgado Florida Mortgage Consultant">
     
     <!-- Canonical -->
@@ -52,8 +52,8 @@
         "name": "Will Delgado Mortgage Consulting",
         "description": "Licensed Florida Mortgage Consultant providing home loan solutions in South Florida",
         "url": "https://williamrdelgado.com",
-        "image": "https://via.placeholder.com/400x400/1e40af/ffffff?text=WD",
-        "telephone": "+1-305-123-4567",
+        "image": "https://via.placeholder.com/400x400/1d499c/ffffff?text=WD",
+        "telephone": "+1-321-695-2676",
         "priceRange": "$$",
         "serviceType": ["Home Loans", "Refinancing", "First-Time Buyer Programs"],
         "address": {
@@ -90,10 +90,10 @@
         }
         
         :root {
-            --primary: #1e40af;
-            --primary-dark: #1e3a8a;
-            --secondary: #0f766e;
-            --accent: #f59e0b;
+            --primary: #1d499c;
+            --primary-dark: #173a7d;
+            --secondary: #3f8dcf;
+            --accent: #3f8dcf;
             --success: #10b981;
             --text: #1f2937;
             --text-light: #6b7280;
@@ -426,6 +426,33 @@
         .author-location {
             color: var(--text-light);
             font-size: 0.9rem;
+        }
+
+        /* About Section */
+        .about {
+            margin-bottom: 3rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+            gap: 2rem;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .about-photo {
+            width: 100%;
+            max-width: 380px;
+            justify-self: center;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid var(--white);
+            background: var(--white);
+        }
+
+        .about-text p:last-child {
+            margin-bottom: 0;
         }
         
         /* Contact Form */
@@ -907,6 +934,16 @@
             .testimonial-card {
                 padding: 1.5rem;
             }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: left;
+            }
+
+            .about-photo {
+                max-width: 300px;
+                order: -1;
+            }
             
             .chat-toggle {
                 width: 50px;
@@ -1121,8 +1158,13 @@
         <!-- About Section -->
         <section id="about" class="about" aria-labelledby="about-title">
             <h2 id="about-title">About Will Delgado</h2>
-            <p>As a licensed Florida mortgage consultant with 15+ years of experience across South Florida, I've helped hundreds of families achieve their Florida home ownership dreams. My approach combines deep Florida market expertise with personalized service to find the perfect mortgage solution for your unique situation.</p>
-            <p>I stay current with Florida's specific market trends, lending regulations, and local programs to ensure you receive the most competitive rates and suitable loan products available in Florida.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>As a licensed Florida mortgage consultant with 15+ years of experience across South Florida, I've helped hundreds of families achieve their Florida home ownership dreams. My approach combines deep Florida market expertise with personalized service to find the perfect mortgage solution for your unique situation.</p>
+                    <p>I stay current with Florida's specific market trends, lending regulations, and local programs to ensure you receive the most competitive rates and suitable loan products available in Florida.</p>
+                </div>
+                <img class="about-photo" src="will.jpg" alt="Will Delgado" loading="lazy" decoding="async">
+            </div>
         </section>
         
         <!-- Contact Form -->
@@ -1144,7 +1186,7 @@
                 
                 <div class="form-group">
                     <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required aria-required="true" placeholder="(305) 123-4567">
+                    <input type="tel" id="phone" name="phone" required aria-required="true" placeholder="(321) 695-2676">
                 </div>
                 
                 <div class="form-group">
@@ -1219,7 +1261,7 @@
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
-                        <span><a href="tel:+13051234567" style="color: inherit;">(305) 123-4567</a></span>
+                        <span><a href="tel:+13216952676" style="color: inherit;">(321) 695-2676</a></span>
                     </li>
                     <li>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
